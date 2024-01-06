@@ -1,5 +1,6 @@
+import 'package:bloc_cubit/core/constants/my_strings.dart';
 import 'package:bloc_cubit/core/themes/app_themes.dart';
-import 'package:bloc_cubit/home_page.dart';
+import 'package:bloc_cubit/presentation/screens/splash_screen/splash_imports.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: MyStrings.appName,
       theme: AppThemes.light,
       darkTheme: AppThemes.dark,
       themeMode: ThemeMode.system,
-      home: const MyHomePage(),
+      home: const Splash(),
     );
   }
 }
