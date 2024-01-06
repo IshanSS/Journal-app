@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'core/constants/my_strings.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -8,7 +9,7 @@ class MyHomePage extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text('Loading...'),
+          child: Text(MyStrings.appName),
         ),
       ),
     );
